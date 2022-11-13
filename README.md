@@ -9,3 +9,5 @@ This is a back end app simulating an e-commerce site. There is a Categories, Pro
 Start a MYSQL shell and then use the database from the Schema.sql file. Then run "npm run seed" in order to seed the tables. Lastly run "npm start" to start the server.
 
 ## Video
+
+[ecommerce backend video](https://drive.google.com/file/d/1RQI3AXJ-FaIuBovDen9-Nsfud7yJzxwk/view)
