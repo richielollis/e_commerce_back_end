@@ -39,6 +39,9 @@ router.get("/:id", (req, res) => {
         through: ProductTag,
       },
     ],
+    where: {
+      id: req.params.id,
+    },
   })
     .then((dbTagData) => res.json(dbTagData))
     .catch((err) => {
