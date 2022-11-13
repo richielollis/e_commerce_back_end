@@ -77,17 +77,19 @@ router.put("/:id", (req, res) => {
 
 router.delete("/:id", (req, res) => {
   // delete a category by its `id` value
+  console.log("==============================================");
+  console.log(req.params.id);
   Category.destroy({
     where: {
       id: req.params.id,
     },
   })
-    .then((dbCategoryData) => {
-      if (!dbCategoryData) {
+    .then((dbProductData) => {
+      if (!dbProductData) {
         res.json(404)({ message: "Category not found" });
         return;
       }
-      res.json(dbCategoryData);
+      res.json(dbProductData);
     })
     .catch((err) => {
       console.log(err);
